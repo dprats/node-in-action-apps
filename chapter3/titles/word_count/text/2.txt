@@ -1,0 +1,2 @@
+For a parallel flow control example, we’ll make a simple application that will read the contents of a number of text files and output the frequency of word use through- out the files. Reading the contents of the text files will be done using the asynchro- nous readFile function, so a number of file reads could be done in parallel. How this application works is shown in figure 3.11.
+The output will look something like the following text (although it will likely be much longer):
