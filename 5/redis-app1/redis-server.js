@@ -45,3 +45,30 @@ client.lrange('tasks', 0, -1, function(err, items){
 		console.log(' ' +  item);
 	});
 });
+
+
+//The following code illustrates the storage and 
+//retrieval of IP addresses. 
+
+client.sadd('ip_addresses', '204.10.37.96', redis.print);
+client.sadd('ip_addresses', '204.10.37.96', redis.print);
+client.sadd('ip_addresses', '72.32.231.86', redis.print);
+client.smembers('ip_addresses', function(err, members){
+	if(err) throw err;
+	console.log(members);
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
